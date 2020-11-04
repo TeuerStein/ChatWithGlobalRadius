@@ -9,10 +9,15 @@ import SwiftUI
 
 struct Home: View {
     @StateObject var homeData = HomeModel()
+    @AppStorage("current_user") var user = ""
     
     var body: some View {
         VStack {
-            Text("Home Page")
+            ScrollView {
+                ForEach(homeData.msgs) { msg in
+                    Text(msg.msg)
+                }
+            }
         }
             .onAppear(perform: {
                 homeData.onAppear()
