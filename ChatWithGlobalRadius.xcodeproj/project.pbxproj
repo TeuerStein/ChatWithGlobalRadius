@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		B957D7AA25527C4D00D89909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B957D7A925527C4D00D89909 /* Assets.xcassets */; };
 		B957D7AD25527C4D00D89909 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B957D7AC25527C4D00D89909 /* Preview Assets.xcassets */; };
 		B957D7B62552802700D89909 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B957D7B52552802700D89909 /* GoogleService-Info.plist */; };
+		B957D7BC2552837B00D89909 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D7BB2552837B00D89909 /* Home.swift */; };
+		B957D7D52552871000D89909 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D7D42552871000D89909 /* HomeModel.swift */; };
+		B957D7D82552874A00D89909 /* MsgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D7D72552874A00D89909 /* MsgModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		B957D7AC25527C4D00D89909 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B957D7AE25527C4D00D89909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B957D7B52552802700D89909 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B957D7BB2552837B00D89909 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B957D7D42552871000D89909 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		B957D7D72552874A00D89909 /* MsgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgModel.swift; sourceTree = "<group>"; };
 		E08F1BCBCA89DB51B9806C40 /* Pods-ChatWithGlobalRadius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatWithGlobalRadius.debug.xcconfig"; path = "Target Support Files/Pods-ChatWithGlobalRadius/Pods-ChatWithGlobalRadius.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +52,6 @@
 				E08F1BCBCA89DB51B9806C40 /* Pods-ChatWithGlobalRadius.debug.xcconfig */,
 				254148CC585DEFD7390A7C93 /* Pods-ChatWithGlobalRadius.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -71,6 +76,8 @@
 		B957D7A425527C4C00D89909 /* ChatWithGlobalRadius */ = {
 			isa = PBXGroup;
 			children = (
+				B957D7BA2552836900D89909 /* Models */,
+				B957D7B92552836100D89909 /* Views */,
 				B957D7B52552802700D89909 /* GoogleService-Info.plist */,
 				B957D7A525527C4C00D89909 /* ChatWithGlobalRadiusApp.swift */,
 				B957D7A725527C4C00D89909 /* ContentView.swift */,
@@ -87,6 +94,23 @@
 				B957D7AC25527C4D00D89909 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B957D7B92552836100D89909 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B957D7BB2552837B00D89909 /* Home.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B957D7BA2552836900D89909 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B957D7D42552871000D89909 /* HomeModel.swift */,
+				B957D7D72552874A00D89909 /* MsgModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FFFF98FFCC5125ACB292775C /* Frameworks */ = {
@@ -211,7 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B957D7D52552871000D89909 /* HomeModel.swift in Sources */,
+				B957D7D82552874A00D89909 /* MsgModel.swift in Sources */,
 				B957D7A825527C4C00D89909 /* ContentView.swift in Sources */,
+				B957D7BC2552837B00D89909 /* Home.swift in Sources */,
 				B957D7A625527C4C00D89909 /* ChatWithGlobalRadiusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +372,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChatWithGlobalRadius/Preview Content\"";
 				DEVELOPMENT_TEAM = DHD4365Q83;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ChatWithGlobalRadius/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -368,6 +399,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChatWithGlobalRadius/Preview Content\"";
 				DEVELOPMENT_TEAM = DHD4365Q83;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ChatWithGlobalRadius/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
