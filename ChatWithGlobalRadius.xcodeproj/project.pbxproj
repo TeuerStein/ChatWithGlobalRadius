@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FE8600B8300B2D0EA6A18BC /* Pods_ChatWithGlobalRadius.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC80AEE2AD37DCDF2E4E49A6 /* Pods_ChatWithGlobalRadius.framework */; };
 		B957D7A625527C4C00D89909 /* ChatWithGlobalRadiusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D7A525527C4C00D89909 /* ChatWithGlobalRadiusApp.swift */; };
 		B957D7A825527C4C00D89909 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D7A725527C4C00D89909 /* ContentView.swift */; };
 		B957D7AA25527C4D00D89909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B957D7A925527C4D00D89909 /* Assets.xcassets */; };
 		B957D7AD25527C4D00D89909 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B957D7AC25527C4D00D89909 /* Preview Assets.xcassets */; };
+		B957D7B62552802700D89909 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B957D7B52552802700D89909 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		254148CC585DEFD7390A7C93 /* Pods-ChatWithGlobalRadius.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatWithGlobalRadius.release.xcconfig"; path = "Target Support Files/Pods-ChatWithGlobalRadius/Pods-ChatWithGlobalRadius.release.xcconfig"; sourceTree = "<group>"; };
+		AC80AEE2AD37DCDF2E4E49A6 /* Pods_ChatWithGlobalRadius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatWithGlobalRadius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B957D7A225527C4C00D89909 /* ChatWithGlobalRadius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatWithGlobalRadius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B957D7A525527C4C00D89909 /* ChatWithGlobalRadiusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWithGlobalRadiusApp.swift; sourceTree = "<group>"; };
 		B957D7A725527C4C00D89909 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B957D7A925527C4D00D89909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B957D7AC25527C4D00D89909 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B957D7AE25527C4D00D89909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B957D7B52552802700D89909 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E08F1BCBCA89DB51B9806C40 /* Pods-ChatWithGlobalRadius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatWithGlobalRadius.debug.xcconfig"; path = "Target Support Files/Pods-ChatWithGlobalRadius/Pods-ChatWithGlobalRadius.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE8600B8300B2D0EA6A18BC /* Pods_ChatWithGlobalRadius.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3C6028274CEE7BC2CC8EA98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E08F1BCBCA89DB51B9806C40 /* Pods-ChatWithGlobalRadius.debug.xcconfig */,
+				254148CC585DEFD7390A7C93 /* Pods-ChatWithGlobalRadius.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B957D79925527C4C00D89909 = {
 			isa = PBXGroup;
 			children = (
 				B957D7A425527C4C00D89909 /* ChatWithGlobalRadius */,
 				B957D7A325527C4C00D89909 /* Products */,
+				A3C6028274CEE7BC2CC8EA98 /* Pods */,
+				FFFF98FFCC5125ACB292775C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +71,7 @@
 		B957D7A425527C4C00D89909 /* ChatWithGlobalRadius */ = {
 			isa = PBXGroup;
 			children = (
+				B957D7B52552802700D89909 /* GoogleService-Info.plist */,
 				B957D7A525527C4C00D89909 /* ChatWithGlobalRadiusApp.swift */,
 				B957D7A725527C4C00D89909 /* ContentView.swift */,
 				B957D7A925527C4D00D89909 /* Assets.xcassets */,
@@ -69,6 +89,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FFFF98FFCC5125ACB292775C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC80AEE2AD37DCDF2E4E49A6 /* Pods_ChatWithGlobalRadius.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B957D7B125527C4D00D89909 /* Build configuration list for PBXNativeTarget "ChatWithGlobalRadius" */;
 			buildPhases = (
+				AE90D3B9A10670241DBF8577 /* [CP] Check Pods Manifest.lock */,
 				B957D79E25527C4C00D89909 /* Sources */,
 				B957D79F25527C4C00D89909 /* Frameworks */,
 				B957D7A025527C4C00D89909 /* Resources */,
+				E4495AA4D57AEE423467751D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +158,53 @@
 			files = (
 				B957D7AD25527C4D00D89909 /* Preview Assets.xcassets in Resources */,
 				B957D7AA25527C4D00D89909 /* Assets.xcassets in Resources */,
+				B957D7B62552802700D89909 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE90D3B9A10670241DBF8577 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatWithGlobalRadius-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4495AA4D57AEE423467751D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatWithGlobalRadius/Pods-ChatWithGlobalRadius-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatWithGlobalRadius/Pods-ChatWithGlobalRadius-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatWithGlobalRadius/Pods-ChatWithGlobalRadius-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B957D79E25527C4C00D89909 /* Sources */ = {
@@ -264,6 +337,7 @@
 		};
 		B957D7B225527C4D00D89909 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E08F1BCBCA89DB51B9806C40 /* Pods-ChatWithGlobalRadius.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +360,7 @@
 		};
 		B957D7B325527C4D00D89909 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254148CC585DEFD7390A7C93 /* Pods-ChatWithGlobalRadius.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
