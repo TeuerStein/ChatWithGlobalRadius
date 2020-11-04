@@ -9,8 +9,10 @@ import SwiftUI
 import Firebase
 
 class HomeModel: ObservableObject {
+    @Published var txt = ""
     @Published var msgs: [MsgModel] = []
     @AppStorage("current_user") var user = ""
+    
     let ref = Firestore.firestore()
     
     init() {
