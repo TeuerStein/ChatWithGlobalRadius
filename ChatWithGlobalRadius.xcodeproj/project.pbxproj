@@ -17,6 +17,7 @@
 		B957D7D52552871000D89909 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D7D42552871000D89909 /* HomeModel.swift */; };
 		B957D7D82552874A00D89909 /* MsgModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D7D72552874A00D89909 /* MsgModel.swift */; };
 		B957D7DB25529F9000D89909 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D7DA25529F9000D89909 /* ChatRow.swift */; };
+		B957D7F02552C18300D89909 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = B957D7EF2552C18300D89909 /* ChatBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B957D7D42552871000D89909 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		B957D7D72552874A00D89909 /* MsgModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsgModel.swift; sourceTree = "<group>"; };
 		B957D7DA25529F9000D89909 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		B957D7EF2552C18300D89909 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		E08F1BCBCA89DB51B9806C40 /* Pods-ChatWithGlobalRadius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatWithGlobalRadius.debug.xcconfig"; path = "Target Support Files/Pods-ChatWithGlobalRadius/Pods-ChatWithGlobalRadius.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 				B957D7BB2552837B00D89909 /* Home.swift */,
 				B957D7A725527C4C00D89909 /* ContentView.swift */,
 				B957D7DA25529F9000D89909 /* ChatRow.swift */,
+				B957D7EF2552C18300D89909 /* ChatBubble.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				B957D7BC2552837B00D89909 /* Home.swift in Sources */,
 				B957D7DB25529F9000D89909 /* ChatRow.swift in Sources */,
 				B957D7A625527C4C00D89909 /* ChatWithGlobalRadiusApp.swift in Sources */,
+				B957D7F02552C18300D89909 /* ChatBubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

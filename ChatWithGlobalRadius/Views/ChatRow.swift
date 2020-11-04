@@ -15,30 +15,29 @@ struct ChatRow: View {
         HStack(spacing: 15) {
             if chatData.user != user {
                 NickName(name: chatData.user)
-            }
-            
-            if chatData.user == user{ Spacer(minLength: 0) }
+            } else { Spacer(minLength: 0) }
             
             VStack(alignment: chatData.user == user ? .trailing: .leading, spacing: 5) {
                 Text(chatData.msg)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color("Color"))
-                    .padding(15)
+                    .background(Color.blue)
+                    .clipShape(ChatBubble(myMsg: chatData.user == user))
                 
                 Text(chatData.timeStamp, style: .time)
                     .font(.caption2)
                     .foregroundColor(.gray)
-                    .padding(chatData.user == user ? .leading: .trailing, 10)
-                
-                if chatData.user == user {
-                    NickName(name: chatData.user)
-                }
-                
-                if chatData.user != user{ Spacer(minLength: 0) }
+                    .padding(chatData.user != user ? .leading: .trailing, 10)
             }
+            
+            if chatData.user == user {
+                NickName(name: chatData.user)
+            } else { Spacer(minLength: 0) }
+
         }
+        .padding(.horizontal)
+        .id(chatData.id)
     }
 }
 
@@ -51,7 +50,7 @@ struct NickName: View {
             .fontWeight(.heavy)
             .foregroundColor(.white)
             .frame(width: 50, height: 50)
-            .background((name == user ? Color.orange: Color.green).opacity(0.5))
+            .background((name == user ? Color.red: Color.green).opacity(0.85))
             .clipShape(Circle())
     }
 }
