@@ -10,6 +10,7 @@ import SwiftUI
 struct Home: View {
     @StateObject var homeData = HomeModel()
     @AppStorage("current_user") var user = ""
+    @State var scrolled = false
     
     var body: some View {
         VStack(spacing: 0) {
@@ -18,6 +19,15 @@ struct Home: View {
                     VStack(spacing: 15) {
                         ForEach(homeData.msgs) { msg in
                             ChatRow(chatData: msg)
+                                .onAppear {
+                                    if msg.id == self.homeData.msgs.last!.id && scrolled {
+                                        reader.scrollTo(homeData.msgs.last!.id, anchor: .bottom)
+                                        scrolled = true
+                                    }
+                                }
+                        }
+                        .onChange(of: homeData.msgs) { value in
+                            reader.scrollTo(homeData.msgs.last!.id, anchor: .bottom)
                         }
                     }
                 }

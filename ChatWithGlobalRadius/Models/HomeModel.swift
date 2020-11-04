@@ -49,24 +49,26 @@ class HomeModel: ObservableObject {
     }
     
     func readAllMsgs() {
-        ref.collection("Msgs").addSnapshotListener { (snap, err) in
-            if err != nil {
-                print(err!.localizedDescription)
-                return
-            }
+        ref.collection("Msgs")
+            .order(by: "timeStamp", descending: false)
+            .addSnapshotListener { (snap, err) in
+                if err != nil {
+                    print(err!.localizedDescription)
+                    return
+                }
             
-            guard let data = snap else { return }
-            
-            data.documentChanges.forEach { (doc) in
-                if doc.type == .added {
-                    let msg = try! doc.document.data(as: MsgModel.self)!
-                    
-                    DispatchQueue.main.async {
-                        self.msgs.append(msg)
+                guard let data = snap else { return }
+                
+                data.documentChanges.forEach { (doc) in
+                    if doc.type == .added {
+                        let msg = try! doc.document.data(as: MsgModel.self)!
+                        
+                        DispatchQueue.main.async {
+                            self.msgs.append(msg)
+                        }
                     }
                 }
             }
-        }
     }
     
     func writeMsg() {
