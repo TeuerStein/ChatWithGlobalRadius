@@ -68,4 +68,17 @@ class HomeModel: ObservableObject {
             }
         }
     }
+    
+    func writeMsg() {
+        let msg = MsgModel(msg: txt, user: user, timeStamp: Date())
+        
+        let _ = try! ref.collection("Msgs").addDocument(from: msg) { (err) in
+            if err != nil {
+                print(err!.localizedDescription)
+                return
+            }
+            
+            self.txt = ""
+        }
+    }
 }

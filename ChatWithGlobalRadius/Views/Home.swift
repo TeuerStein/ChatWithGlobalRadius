@@ -31,7 +31,7 @@ struct Home: View {
                     .clipShape(Capsule())
                 
                 if homeData.txt != "" {
-                    Button(action: {}, label: {
+                    Button(action: homeData.writeMsg, label: {
                         Image(systemName: "paperplane.fill")
                             .font(.system(size: 22))
                             .foregroundColor(.white)
