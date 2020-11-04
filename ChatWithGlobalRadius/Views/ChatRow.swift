@@ -52,5 +52,10 @@ struct NickName: View {
             .frame(width: 50, height: 50)
             .background((name == user ? Color.red: Color.green).opacity(0.85))
             .clipShape(Circle())
+            .contentShape(Circle())
+            .contextMenu {
+                Text(name)
+                    .fontWeight(.bold)
+            }
     }
 }
