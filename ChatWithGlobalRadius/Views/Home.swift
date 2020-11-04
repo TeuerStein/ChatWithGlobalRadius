@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct Home: View {
+    @StateObject var homeData = HomeModel()
+    
     var body: some View {
         VStack {
             Text("Home Page")
         }
+            .onAppear(perform: {
+                homeData.onAppear()
+            })
     }
 }
 
